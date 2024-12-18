@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style for content divs */
+        .content div {
+            padding: 10px;
+            border-left: 4px solid #ff7043;
+            background-color: #fff3e0;
+            border-radius: 4px;
+        }
+
+        /* Margin for all content divs except the last one */
+        .content div:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        /* Style for footer paragraphs */
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* General body styling */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px 10%;
+            text-align: center;
+        }
+
+        /* Header title styling */
+        header h1 {
+            margin: 0;
+        }
+
+        /* Styling for the main content container */
+        .weare {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        /* Styling for the content section */
+        .content {
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Styling for content section headers */
+        .content h2 {
+            color: #ff7043;
+            margin-top: 0;
+        }
+
+        /* Margin for mission, vision, and team sections */
+        .mission, .vision, .team {
+            margin: 20px 0;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Flexbox styling for the work section */
+        .work {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* Styling for call-to-action links */
+        .cta a {
+            text-decoration: none;
+            border: 2px solid white;
+            background-color: orange;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section with navigation menu -->
+    <header>
+        <div class="container">
+            <nav>
+                <div>
+                    <ul>
+                        <li><a href="Meals4All.html">Home</a></li>|
+                        <li><a class="current" href="AboutUs.html">About Us</a></li>|
+                        <li><a href="ContactUs.html">How to Donate</a></li>|
+                        <li><a href="Volunteer.html">Volunteer</a></li>|
+                        <li><a href="Resources.html">Resources</a></li>|
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <div class="weare">
+        <div class="content">
+            <!-- Section: Who We Are -->
+            <h2>Who We Are</h2>
+            <p>
+                We are a passionate team dedicated to bridging the gap between surplus food and those in need. Founded on principles of empathy and sustainability, we aim to transform the way food is managed, ensuring no meal goes to waste and no one goes to bed hungry.
+            </p>
+
+            <!-- Section: Our Mission -->
+            <div class="section">
+                <h3>Our Mission</h3>
+                <p>
+                    To ensure no one goes to bed hungry by creating a seamless connection between food surplus and those in need. Through innovation and collaboration, we simplify food donation for individuals, organizations, and businesses.
+                </p>
+            </div>
+
+            <!-- Section: Our Vision -->
+            <div class="section">
+                <h3>Our Vision</h3>
+                <p>
+                    A world where food waste is a thing of the past, and every individual has access to nutritious meals. Together, we aim to create a compassionate and sustainable society.
+                </p>
+            </div>
+
+            <!-- Section: Our Impact -->
+            <div class="section">
+                <h3>Our Impact</h3>
+                <p>
+                    Since our inception, we have redistributed thousands of meals to families in need, preventing food from ending up in landfills. Our initiatives have touched countless lives, spreading hope and dignity to underserved communities.
+                </p>
+            </div>
+
+            <!-- Section: How We Work -->
+            <div class="section">
+                <h3>How We Work</h3>
+                <p>
+                    Our process is simple yet effective:
+                </p>
+                <div class="work">
+                    <!-- Subsection: Collection -->
+                    <div>
+                        <h3>Collection</h3>
+                        <p>Surplus food is gathered from donors such as restaurants, grocery stores, and events.</p>
+                    </div>
+                    <!-- Subsection: Storage -->
+                    <div>
+                        <h3>Storage</h3>
+                        <p>Food is stored in hygienic conditions to ensure safety and quality.</p>
+                    </div>
+                    <!-- Subsection: Distribution -->
+                    <div>
+                        <h3>Distribution</h3>
+                        <p>Meals are delivered to shelters, food banks, and individuals in need.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section: Meet the Team -->
+            <div class="section">
+                <h3>Meet the Team</h3>
+                <p>
+                    Our team is made up of dedicated volunteers, social workers, and tech enthusiasts who are committed to making a difference. Each member plays a vital role in driving our mission forward.
+                </p>
+            </div>
+
+            <!-- Section: Our Partners -->
+            <div class="section">
+                <h3>Our Partners</h3>
+                <p>
+                    We are proud to collaborate with a network of restaurants, grocery stores, and community organizations. Together, we amplify our impact and reach more people in need.
+                </p>
+            </div>
+
+            <!-- Call-to-action button -->
+            <div class="cta">
+                <a href="ContactUs.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Food Donation Initiative. All rights reserved.</p>
+    </footer>
+</body>
+</html>

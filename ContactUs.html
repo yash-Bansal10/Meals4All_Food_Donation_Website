@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(/images/Contact.png) no-repeat center center fixed;
+            background-size: cover;
+            color: #3e2723;
+        }
+
+        /* Contact form container styling */
+        .contact {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+        }
+
+        /* Hover effect for contact form container */
+        .contact:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Heading styling */
+        h1 {
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        /* Form group styling */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        /* Label styling */
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #5d4037;
+        }
+
+        /* Input and textarea styling */
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d7ccc8;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        /* Textarea specific styling */
+        .form-group textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        /* Focus effect for input and textarea */
+        .form-group input:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: black;
+            box-shadow: 0 0 8px rgba(244, 81, 30, 0.3);
+        }
+
+        /* Button styling */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: black;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .btn a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        /* Hover effect for button */
+        .btn:hover {
+            background: #e64a19;
+            transform: scale(1.05);
+        }
+
+        /* Info section styling */
+        .info {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #5d4037;
+        }
+
+        /* Paragraph styling within info section */
+        .info p {
+            margin: 5px 0;
+        }
+
+        /* Strong tag styling within info section */
+        .info p strong {
+            color: #bf360c;
+        }
+
+        /* Donate container styling */
+        .donate-container {
+            margin-top: 40px;
+            background: #ffccbc;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #ffab91;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading styling within donate container */
+        .donate-container h2 {
+            text-align: center;
+            color: #bf360c;
+            margin-bottom: 15px;
+        }
+
+        /* Input styling within donate container */
+        .donate-container .form-group input {
+            font-size: 18px;
+            text-align: center;
+            border-color: black;
+        }
+
+        /* Button styling within donate container */
+        .donate-container .btn {
+            background: black;
+        }
+
+        /* Hover effect for button within donate container */
+        .donate-container .btn:hover {
+            background: #bf360c;
+        }
+
+        /* Span styling within contact section */
+        .contact span {
+            color: #bf360c;
+            font-size: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="container">
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="Meals4All.html">Home</a></li>|
+                    <li><a href="AboutUs.html">About Us</a></li>|
+                    <li class="current donate"><a href="ContactUs.html">How to Donate</a></li>|
+                    <li><a href="Volunteer.html">Volunteer</a></li>|
+                    <li><a href="Resources.html">Resources</a></li>|
+                    <li><a class="current" href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Contact Form Section -->
+<div class="contact">
+    <h1>Contact Us</h1>
+    <p><span>Food Donation</span>
+        <p>You can donate various types of food, including:<p>
+        
+        <p>Non-perishable items: canned goods, pasta, rice, etc.</p>
+        <p>Perishable items: fresh fruits, vegetables, dairy products (check with us for safety guidelines).</p>
+        <span>Steps to Donate</span>
+        <p>Identify Your Donation: Check your pantry or local grocery store for items you can donate.</p>
+        <p>Contact Us: Reach out via our contact form or call us at [phone number] to arrange your donation.</p>
+        <span>Drop-off Locations</span><p> Visit us at our distribution centers:</p>
+        <p>Location 1: Address, Hours</p>
+        <p>Location 2: Address, Hours</p>
+        <span>Special Donations</span>
+        <p>For businesses and organizations:</p>
+        
+        <p>Schedule regular pickups for surplus food.</p>
+        <p>Participate in community food drives.</p>
+    </p>
+    <form action="contactSubmission.html" method="POST">
+        <!-- Name input field -->
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <!-- Email input field -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <!-- Phone number input field -->
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        </div>
+        <!-- Address textarea field -->
+        <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" placeholder="Your Address"></textarea>
+        </div>
+        <!-- Submit button -->
+        <button type="submit" class="btn">Submit</button>
+    </form>
+    <!-- Contact information -->
+    <div class="info">
+        <p><strong>Email:</strong> contact@example.com</p>
+        <p><strong>Phone:</strong> +123 456 7890</p>
+        <p><strong>Address:</strong> 123, Example Street, City, Country</p>
+    </div>
+
+    <!-- Donation section -->
+    <div class="donate-container">
+        <h2>Donate Us</h2>
+        <p><span>Your generosity can create a ripple effect of change.</span> 
+        <p>By choosing to donate money, you enable us to source and distribute food more effectively, reach underserved communities faster, and expand our hunger relief efforts.</p>
+        <p>Every contribution, no matter the size, helps us bring hope to countless lives, ensuring that no one goes to bed hungry. Together, we can make a profound impact—one meal, one family, and one community at a time.</p>
+        <form action="submissionPage.html" method="POST">
+            <!-- Donation amount input field -->
+            <div class="form-group">
+                <label for="donation-amount">Amount to Donate</label>
+                <input type="number" id="donation-amount" name="donation-amount" placeholder="Enter Amount" required>
+            </div>
+            <!-- Donate button -->
+            <button type="submit" class="btn">Donate</button>
+        </form>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Meals4All. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

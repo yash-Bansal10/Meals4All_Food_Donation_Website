@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals4All Volunteer Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            background-color: #af3030; /* Warm tangerine */
+            color: white;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.3rem;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fdf3e5; /* Soft light yellow */
+            color: #5a5a5a;
+            line-height: 1.6;
+            margin: 0;
+        }
+    
+        /* Why Volunteer Section */
+        .why-volunteer {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-volunteer:hover {
+            transform: scale(1.05);
+        }
+
+        .why-volunteer h2 {
+            font-size: 2.5rem;
+            color: #af3030;
+            margin-bottom: 20px;
+        }
+
+        .why-volunteer ul {
+            list-style: none;
+            font-size: 1.1rem;
+            padding-left: 0;
+        }
+
+        .why-volunteer li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .why-volunteer li::before {
+            content: '✔️';
+            margin-right: 10px;
+            color: #af3030;
+        }
+
+        /* Volunteer Form Section */
+        .volunteer-form {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .volunteer-form h2 {
+            font-size: 2.5rem;
+            color: #af3030;
+            margin-bottom: 30px;
+        }
+
+        .volunteer-form form {
+            display: grid;
+            gap: 20px;
+        }
+
+        .volunteer-form label {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #5a5a5a;
+        }
+
+        .volunteer-form input,
+        .volunteer-form select,
+        .volunteer-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #af3030; /* Light golden */
+            border-radius: 6px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .volunteer-form input:focus,
+        .volunteer-form select:focus,
+        .volunteer-form textarea:focus {
+            border-color: #af3030;
+        }
+
+        .volunteer-form button {
+            background-color: #af3030; /* Warm tangerine */
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .volunteer-form button:hover {
+            background-color: #e7782d; /* Darker orange */
+        }
+
+        .volunteer-form button:disabled {
+            background-color: #888;
+            cursor: not-allowed;
+        }
+
+        /* Other Ways to Help Section */
+        .other-ways {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .other-ways:hover {
+            transform: scale(1.05);
+        }
+
+        .other-ways h2 {
+            font-size: 2.5rem;
+            color: #af3030;
+            margin-bottom: 20px;
+        }
+
+        .other-ways ul {
+            list-style: none;
+            font-size: 1.1rem;
+            padding-left: 0;
+        }
+
+        .other-ways li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .other-ways li::before {
+            content: '✔️';
+            margin-right: 10px;
+            color: #ff8c42;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #5a5a5a;
+        }
+
+        footer a {
+            color: #ff8c42;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div>
+                    <ul>
+                        <li><a href="Meals4All.html">Home</a></li>| <!-- Link to Home page -->
+                        <li><a href="AboutUs.html">About Us</a></li>| <!-- Link to About Us page -->
+                        <li class="donate"><a href="ContactUs.html">How to Donate</a></li>| <!-- Link to How to Donate page -->
+                        <li><a class="current" href="Volunteer.html">Volunteer</a></li>| <!-- Link to Volunteer page, marked as current page -->
+                        <li><a href="Resources.html">Resources</a></li>| <!-- Link to Resources page -->
+                        <li><a href="ContactUs.html">Contact Us</a></li> <!-- Link to Contact Us page -->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Header Section -->
+    <section class="header">
+        <h1>Become a Volunteer with Meals4All</h1>
+        <p>Join us in making a difference by helping those in need!</p>
+    </section>
+
+    <!-- Why Volunteer Section -->
+    <section class="why-volunteer">
+        <h2>Why Volunteer with Meals4All?</h2>
+        <p>Volunteering at Meals4All isn’t just about helping with food distribution—it's about making a positive impact on the lives of others and building a stronger, more compassionate community.</p>
+        <ul>
+            <li><strong>Make an Impact:</strong> Every meal you help prepare or distribute brings us one step closer to ending food insecurity.</li>
+            <li><strong>Join a Community:</strong> Be part of a team of dedicated volunteers who share your passion for giving back.</li>
+            <li><strong>Flexible Opportunities:</strong> Whether you want to volunteer weekly or monthly, we have roles that fit your schedule.</li>
+        </ul>
+    </section>
+
+    <!-- Volunteer Form Section -->
+    <section class="volunteer-form">
+        <h2>Volunteer Application Form</h2>
+        <p>If you're ready to make a difference, fill out the form below to get started as a physical volunteer with Meals4All!</p>
+        <form action="volunteersSubmission.html" method="POST">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required> <!-- Input for full name -->
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required> <!-- Input for email address -->
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required> <!-- Input for phone number -->
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required> <!-- Input for age -->
+
+            <label for="role">Preferred Volunteer Role:</label>
+            <select id="role" name="role" required> <!-- Dropdown for selecting preferred volunteer role -->
+                <option value="meal-preparation">Meal Preparation</option>
+                <option value="distribution">Meal Distribution</option>
+                <option value="event-assistance">Event Assistance</option>
+                <option value="support-role">Support Role</option>
+            </select>
+
+            <label for="availability">Availability:</label>
+            <input type="text" id="availability" name="availability" required> <!-- Input for availability -->
+
+            <label for="experience">Experience/Skills (Optional):</label>
+            <textarea id="experience" name="experience"></textarea> <!-- Textarea for experience/skills -->
+
+            <label for="motivation">Motivation for Volunteering (Optional):</label>
+            <textarea id="motivation" name="motivation"></textarea> <!-- Textarea for motivation -->
+
+            <label for="emergency-contact">Emergency Contact Name & Number:</label>
+            <input type="text" id="emergency-contact" name="emergency-contact" required> <!-- Input for emergency contact -->
+
+            <label for="agreement">
+                <input type="checkbox" id="agreement" name="agreement" required> <!-- Checkbox for agreeing to terms and conditions -->
+                I agree to the <a href="#terms">volunteer terms & conditions</a>.
+            </label>
+
+            <button type="submit">Submit Volunteer Application</button> <!-- Submit button for the form -->
+        </form>
+    </section>
+
+    <!-- Terms & Conditions Section -->
+    <section id="terms" class="other-ways">
+        <h2>Volunteer Terms & Conditions</h2>
+        <ul>
+            <li><strong>Respect and Courtesy:</strong> Volunteers are expected to treat everyone with kindness and respect.</li>
+            <li><strong>Reliability:</strong> We value your time, and we ask that you communicate promptly if you're unable to attend your scheduled shift.</li>
+            <li><strong>Teamwork:</strong> Collaboration with fellow volunteers and staff is essential to our mission.</li>
+            <li><strong>Confidentiality:</strong> Respecting the privacy of those we serve is of utmost importance. Volunteers are asked not to share sensitive information.</li>
+            <li><strong>Health and Safety:</strong> Volunteers should follow all safety protocols to ensure their well-being and that of others.</li>
+            <li><strong>Voluntary Commitment:</strong> Volunteering is a flexible, unpaid activity. We greatly appreciate your time and commitment!</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Meals4All. All rights reserved.</p> <!-- Footer content -->
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submitted</title>
+  </head>
+  <style>
+    /* Style for the body */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Style for the video background container */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    /* Style for the video element */
+    .video-background video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Style for the submission message container */
+    .submitted {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 600px;
+      margin: 20px;
+    }
+
+    /* Style for the main heading */
+    .submitted h1 {
+      color: #333;
+    }
+
+    /* Style for the highlighted part of the heading */
+    .submitted h1 span {
+      color: #007bff;
+    }
+
+    /* Style for the paragraph text */
+    .submitted p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Style for the link button */
+    .submitted a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* Style for the link button on hover */
+    .submitted a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <body>
+    <!-- Container for the video background -->
+    <div class="video-background">
+      <video
+        src="Videos/submissionPage_backgroundVideo.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+    </div>
+    <!-- Container for the submission message -->
+    <div class="submitted">
+      <h1>Thank you for your <span>Submission!</span></h1>
+      <p>
+        Thank You for Your Generosity! We are incredibly grateful for your
+        support. Your donation helps us move closer to achieving our mission and
+        making a meaningful difference. Together, we’re creating a brighter
+        future. Thank you for being a part of our journey!
+      </p>
+
+      <p>Your submission has been received and will be reviewed shortly.</p>
+      <p>Click the button below to return back to the home page.</p>
+      <a href="Meals4All.html">Back to Home</a>
+    </div>
+  </body>
+</html>

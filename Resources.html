@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make4All Resources</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f9eadc, #f4caa1);
+            color: #5d4037;
+        }
+
+        /* Styling for the query container */
+        .query {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+        }
+
+        /* Styling for headings */
+        h1 {
+            text-align: center;
+            color: #89A8B2;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #89A8B2;
+            margin-bottom: 15px;
+        }
+
+        /* Styling for paragraphs and list items */
+        p, li {
+            line-height: 1.8;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for unordered lists */
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Styling for highlighted text */
+        .highlight {
+            color: #2c5968;
+            font-weight: bold;
+        }
+
+        /* Styling for FAQ section */
+        .faq {
+            margin-top: 40px;
+        }
+
+        .faq h2 {
+            margin-top: 20px;
+        }
+
+        /* Styling for accordion items */
+        .accordion {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #E5E1DA;
+            border-radius: 5px;
+            background: #89A8B2;
+        }
+
+        .accordion:hover {
+            background: #ffab91;
+        }
+
+        /* Styling for accordion panels */
+        .panel {
+            padding: 10px;
+            background: #d9e9ee;
+            border-left: 3px solid #89A8B2;
+            border-radius: 5px;
+        }
+
+        /* Styling for buttons */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: cadetblue;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            font-size: larger;
+            background: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section with navigation menu -->
+    <header>
+        <div class="container">
+            <nav>
+                <div>
+                    <ul>
+                        <li><a href="Meals4All.html">Home</a></li>|
+                        <li><a href="AboutUs.html">About Us</a></li>|
+                        <li class="donate"><a href="ContactUs.html">How to Donate</a></li>|
+                        <li><a href="Volunteer.html">Volunteer</a></li>|
+                        <li><a class="current" href="Resources.html">Resources</a></li>|
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content section for food donation resources -->
+    <div class="query">
+        <h1>Food Donation Resources</h1>
+
+        <!-- Section for where to donate food -->
+        <h2>Where to Donate</h2>
+        <p>
+            You can drop off your surplus food at any of our partnered locations:
+        </p>
+        <ul>
+            <li>Local Food Banks</li>
+            <li>Community Shelters</li>
+            <li>Meals4All Distribution Centers</li>
+        </ul>
+        <p></p>
+            Please ensure the food is non-perishable, properly sealed, and within its expiration date. Check our <a href="ContactUs.html" class="highlight">donation guidelines</a> for more details.
+        </p>
+
+        <!-- Section for frequently asked questions -->
+        <h2>FAQs</h2>
+        <div class="faq">
+            <!-- Accordion item for types of food that can be donated -->
+            <div class="accordion">What types of food can I donate?</div>
+            <div class="panel">We accept non-perishable items, fresh produce, canned goods, and packaged food. Homemade meals are not accepted due to health regulations.</div>
+
+            <!-- Accordion item for finding a donation center -->
+            <div class="accordion">Where can I find a donation center near me?</div>
+            <div class="panel">You can locate a nearby donation center by visiting our <a href="maps.google.com" class="highlight">Locations Page</a>. Simply enter your city or ZIP code to find the nearest facility.</div>
+
+            <!-- Accordion item for tax benefits of donating -->
+            <div class="accordion">Are there any tax benefits for donating?</div>
+            <div class="panel">Yes, food donations are tax-deductible in many areas. Save your donation receipt and consult your tax advisor to learn how you can benefit.</div>
+
+            <!-- Accordion item for scheduling a food pickup -->
+            <div class="accordion">Can I schedule a food pickup?</div>
+            <div class="panel">Yes, we offer scheduled pickups for bulk donations. Please contact us via our <a href="ContactUs.html" class="highlight">Contact Page</a> to arrange a pickup.</div>
+
+            <!-- Accordion item for food safety standards -->
+            <div class="accordion">What safety standards are followed?</div>
+            <div class="panel">We adhere to strict food safety standards, ensuring all donated items are stored and distributed in compliance with health regulations.</div>
+        </div>
+
+        <!-- Button to volunteer -->
+        <a href="volunteer.html" class="btn">Volunteer With Us</a>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Meals4All. All rights reserved.</p>
+        </div>
+    </footer>
